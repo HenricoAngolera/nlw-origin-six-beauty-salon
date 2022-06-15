@@ -35,7 +35,6 @@ img {
   --body-color: hsl(0, 0%, 98%);
 
   /*fonts*/
-
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
@@ -167,7 +166,7 @@ body {
 
 #header.scroll .logo span,
 #header.scroll .icon-menu {
-  color: white;
+  color: var(--text-color-light);
   transition: 0.3s;
 }
 
@@ -251,7 +250,6 @@ nav.show ul.grid {
 }
 
 /* toggle menu */
-
 .toggle {
   color: var(--base-color);
   font-size: 1.5rem;
@@ -574,6 +572,11 @@ footer .social a:hover {
     height: 3.125rem;
   }
 
+  #header.scroll ul li a {
+    color: var(--text-color-light);
+    transition: 0.3s;
+  }
+
   /* navigation */
   nav .menu {
     opacity: 1;
@@ -601,13 +604,11 @@ footer .social a:hover {
   }
 
   /* layout */
-
   main {
     margin-top: var(--header-height);
   }
 
   /* home */
-
   #home .container {
     margin: 0 auto;
     grid-auto-flow: column;
